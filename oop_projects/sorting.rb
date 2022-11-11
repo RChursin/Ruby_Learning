@@ -13,9 +13,9 @@ books = ["Heart of Darkness", "Code Complete", "The Lorax", "The Prophet", "Absa
 puts "A-Z: #{alphabetize(books)}" # Print array of books in normal order
 puts "Z-A: #{alphabetize(books, true)}" # Print array of books in reverse order
 
-def alphabetize(arr, rev = false)
+def alphabetize1(arr, rev = false)
   arr.sort! # Sort array
-  if rev == true # If rev is true
+  if rev1 == true # If rev is true
     arr.reverse! # Reverse array
   else
     arr
@@ -24,4 +24,4 @@ end
 
 numbers = [3, 5, 1, 6] # Create array of numbers
 
-puts alphabetize(numbers, rev=true) # Print array of numbers in reverse order
+puts alphabetize(numbers, rev1=true) # Print array of numbers in reverse order
